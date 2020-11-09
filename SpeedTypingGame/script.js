@@ -19,7 +19,7 @@ document.getElementById("quoteInput").onkeydown = function(){
 }
 
 quoteInputElement.addEventListener('input', () => {
-
+    
     correctKeysPress = 0
     incorrectKeysPress = 0
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
@@ -53,6 +53,7 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 function showTime(){
+    
     quoteDisplayElement.innerText = "Your time: " + myTime + "s.\n" +
     "Total keys press = " + totalKeysPress + "\n" +
     "Correct keys press = " + correctKeysPress + "\n" +
@@ -61,6 +62,10 @@ function showTime(){
     quoteAuthorElement.innerText = ""
     quoteInputElement.style.display = "none"
     timerElement.style.visibility = "hidden"
+    totalKeysPress = 0
+    correctKeysPress = 0
+    incorrectKeysPress = 0
+
     //btnNextElement.style.visibility = "hidden"
     //renderNewQuote()
 }

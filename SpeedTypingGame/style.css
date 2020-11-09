@@ -23,6 +23,7 @@ body, .qoute-input{
     color:white;
     padding:20px;
     border-radius: 20px;
+    width:100%;
     /* width:700px;
     max-width: 90%; */
     margin: 100px;
