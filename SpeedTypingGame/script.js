@@ -13,7 +13,14 @@ let incorrectKeysPress
 
 let correct = true;
 
-document.getElementById("quoteInput").onkeydown = function(){
+// document.getElementById("quoteInput").onkeydown = function(){    
+//     totalKeysPress ++;
+//     //console.log(totalKeysPress)
+// }
+
+document.getElementById("quoteInput").onkeydown = function(e){    
+    
+    if( !(e.key === "Shift" || e.key === "Backspace"))
     totalKeysPress ++;
     //console.log(totalKeysPress)
 }
